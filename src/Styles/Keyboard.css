@@ -1,0 +1,37 @@
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 5px;
+    margin: 10px auto;
+    justify-items: center;
+    max-width: 600px;
+}
+
+.keyboard button{
+    font-size: 18px;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: background-color 0.3s;
+    width: 40px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+.keyboard button:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.keyboard button:hover:not(:disabled){
+    background-color: chartreuse;
+}
+
+@media (max-width: 600px) {
+    .keyboard {
+        grid-template-columns: repeat(7,1fr);
+    }
+}

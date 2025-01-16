@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;600&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, #f9f0f6, #f1d0e0); 
+  color: #3a3a3a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  color: #f5a8b2; 
+  font-size: 3.5rem;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: #f4a1b2; 
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  margin: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.2s ease;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #f1c6db; 
+}
+
+button:hover:enabled {
+  transform: translateY(-2px);
+  background-color: #f5a8b2; 
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button.btn-primary {
+  background-color: #f5a8b2; 
+}
+
+button.btn-warning {
+  background-color: #f6c1cd; 
+}
+
+button.btn-danger {
+  background-color: #f4a1b2; 
+}
+
+button.btn-primary:hover {
+  background-color: #f4a1b2;
+}
+
+button.btn-warning:hover {
+  background-color: #f5a8b2;
+}
+
+button.btn-danger:hover {
+  background-color: #f27a7f;
+}
+
+.feedback {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.text-success {
+  color: #f5a8b2; 
+}
+
+.text-danger {
+  color: #f27a7f; 
+}
+
+.word-display {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.letter {
+  font-size: 3rem;
+  margin: 0 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 3px solid #f5a8b2; 
+  padding: 6px;
+  min-width: 40px;
+  text-align: center;
+  color: #f4a1b2; 
+}
+
+.letter.guessed {
+  border-bottom: none;
+  color: #00b3b3; 
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 12px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.keyboard button {
+  font-size: 1.3rem;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #f4a1b2; 
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.keyboard button:hover:enabled {
+  background-color: #f27a7f; 
+  transform: scale(1.05); 
+}
+
+.select-difficulty {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.select-difficulty select {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: 2px solid #f4a1b2; 
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+  transition: border 0.2s;
+}
+
+.select-difficulty select:hover {
+  border-color: #f5a8b2;
+}
+
+.time-score {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.time-score p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f4a1b2;
+  font-family: 'Raleway', sans-serif;
+}
+
+.restart-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.restart-button button {
+  padding: 12px 40px;
+  font-size: 1.3rem;
+  background-color: #f6c1cd;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.restart-button button:hover {
+  background-color: #f5a8b2;
+  transform: translateY(-3px);
+}
+
+.game-over {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #f4a1b2;
+}
+
+.game-over span {
+  font-weight: bold;
+  color: #f27a7f;
+}
+
+.timer {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #f4a1b2;
+  margin-top: 15px;
+}

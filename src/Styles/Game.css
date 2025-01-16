@@ -1,0 +1,218 @@
+/* Style for the word display */
+.word-display {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/* Styling for incorrect guesses */
+.incorrect {
+    color: #f44336; /* Red color for incorrect guesses */
+}
+
+/* Styling for guessed letters */
+.guessed-letter {
+    color: #4CAF50; /* Green color for correct guesses */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for effect */
+}
+
+/* Styling for underscores */
+.underscore {
+    color: #999; /* Gray color for underscores */
+    text-decoration: underline;
+}
+
+
+/* General Button Styles */
+button {
+
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+/* Style for the Hint Button */
+button.hint {
+    background-color: #ccc; /* Gray background */
+    color: #333; /* Dark text */
+}
+
+button.hint:hover {
+    background-color: #b3b3b3; /* Slightly darker gray on hover */
+}
+
+button.hint:disabled {
+    background-color: #f2f2f2; /* Light gray when disabled */
+    color: #999; /* Lighter text when disabled */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+/* Style for the general action buttons (Next, Reveal Answer, Restart) */
+button.action {
+    background-color: #eeb90c; /* Green background */
+    color: white;
+}
+
+button.action:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+button.action:disabled{
+    background-color: #999;
+    color: white;
+}
+
+/* Style for the Game Over and Win buttons */
+button.game-over-win {
+    background-color: #f44336; /* Red background */
+    color: white;
+}
+
+button.game-over-win:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Style for the Next Word button */
+button.next-word {
+    background-color: #2196F3; /* Blue background */
+    color: white;
+}
+
+button.next-word:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+button.next-word:disabled {
+    background-color: #999;
+    color: white;
+}
+/* Style for the Restart Game button */
+button.restart {
+    background-color: #fc312d; /* Gray background */
+    color: white;
+}
+
+button.restart:hover {
+    background-color: #757575; /* Slightly darker gray on hover */
+}
+
+/* Style for the word display */
+.word-display {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+/* Style for the timer and score */
+.timer,
+.score {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Level Selection */
+label {
+    color:#45a049;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+select {
+    font-size: 13px;
+    background-color: #d0e9ab;
+    font-weight: bold;
+    color:rgb(48, 48, 48);
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Style for the word display and guessed letters */
+.word-display span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Timer and Score Styling */
+.timer,
+.score {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* timer value */
+.val {
+    color: #ff7c7a;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.score-val {
+    border-radius: 5px;
+    background-color: #ff7c7a;
+    color:white;
+    padding:2px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Layout for buttons in a row */
+button {
+    display: inline-block;
+    margin: 5px;
+    
+}
+
+/* Styling for the main game container */
+.game-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling for Game Over / Win Message */
+.game-over-message,
+.game-win-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f44336; /* Red for game over */
+    margin: 10px 0;
+}
+
+/* CSS for centering the keyboard */
+.keyboard {
+    display: flex;                  /* Flexbox layout */
+    justify-content: center;        /* Centers horizontally */
+    align-items: center;            /* Centers vertically */
+    width: 90%;                     /* Full width */
+    margin-top: 20px;                /* Optional space above the keyboard */
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+
+}
+
+/* Style for the canvas where the hangman is drawn */
+canvas {
+    border-radius: 10px;
+    border: 0px solid transparent;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for the canvas */
+    background-color: #ffffff; /* Light background color for the canvas */
+    margin-top: 20px; /* Space above the canvas */
+    display: block; /* Make sure it's displayed as a block (not inline) */
+    margin-left: auto;
+    margin-right: auto; /* Center the canvas horizontally */
+    width: 200px; /* Fixed width for the canvas */
+    height: 280px; /* Fixed height for the canvas */
+    padding-top:20px
+}
+
